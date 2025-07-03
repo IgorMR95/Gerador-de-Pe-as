@@ -5,7 +5,7 @@ import os
 # ---------------- CONFIGURAÇÕES ----------------
 st.set_page_config(page_title="🗂️ Painel de Edição de Peças Jurídicas", layout="wide")
 
-DATA_DIR = "prompts/Peças"
+DATA_DIR = "Prompts/Pecas"
 
 # ---------------- FUNÇÕES ----------------
 def load_json(area):
