@@ -15,7 +15,7 @@ API_KEY = "AIzaSyBrRaTvJ6wo2-PQUxOwRMQzr1S8KucT79A"
 genai.configure(api_key=API_KEY)
 MODEL = "gemini-1.5-flash-latest"
 
-PROMPTS_DIR = "prompts/Pecas"
+PROMPTS_DIR = "Prompts/Pecas"
 
 # ---------------- FUNÇÕES AUXILIARES ----------------
 def carregar_areas():
