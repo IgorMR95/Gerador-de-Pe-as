@@ -1,0 +1,216 @@
+{
+  "contencioso": {
+    "beneficios": {
+      "Recurso Administrativo contra Indeferimento de Benefício": {
+        "permite_upload": true,
+        "campos": [
+          {
+            "nome": "recorrente",
+            "label": "Nome do Recorrente",
+            "tipo": "text",
+            "validacao": {
+              "regex": "^[A-Za-z\\s]+$",
+              "mensagem_erro": "Insira apenas letras para o nome."
+            }
+          },
+          {
+            "nome": "cpf_recorrente",
+            "label": "CPF do Recorrente",
+            "tipo": "text",
+            "validacao": {
+              "regex": "^\\d{11}$",
+              "mensagem_erro": "O CPF deve conter exatamente 11 dígitos numéricos."
+            }
+          },
+          {
+            "nome": "beneficio_requerido",
+            "label": "Benefício Requerido",
+            "tipo": "text"
+          },
+          {
+            "nome": "motivo_indeferimento",
+            "label": "Motivo do Indeferimento",
+            "tipo": "textarea"
+          },
+          {
+            "nome": "fundamentos",
+            "label": "Fundamentos para o Recurso",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [
+          {
+            "nome_grupo": "fundamentos_adicionais",
+            "label_grupo": "Fundamentos Adicionais",
+            "campos": [
+              {
+                "nome": "fundamento_adicional",
+                "label": "Fundamento Adicional",
+                "tipo": "textarea"
+              }
+            ]
+          }
+        ],
+        "prompt": "Redija um recurso administrativo para {{recorrente}}, CPF {{cpf_recorrente}}, contra o indeferimento do benefício {{beneficio_requerido}}. Motivo: {{motivo_indeferimento}}. Fundamentação principal: {{fundamentos}}. Fundamentos adicionais: se houver."
+      }
+    },
+    "revisoes": {
+      "Ação Revisional de Benefício Previdenciário": {
+        "permite_upload": true,
+        "campos": [
+          {
+            "nome": "autor",
+            "label": "Nome do Autor",
+            "tipo": "text"
+          },
+          {
+            "nome": "cpf_autor",
+            "label": "CPF do Autor",
+            "tipo": "text",
+            "validacao": {
+              "regex": "^\\d{11}$",
+              "mensagem_erro": "CPF inválido, digite 11 números."
+            }
+          },
+          {
+            "nome": "numero_beneficio",
+            "label": "Número do Benefício",
+            "tipo": "text"
+          },
+          {
+            "nome": "fundamento_revisao",
+            "label": "Fundamento Jurídico da Revisão",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [
+          {
+            "nome_grupo": "argumentos_adicionais",
+            "label_grupo": "Argumentos Adicionais",
+            "campos": [
+              {
+                "nome": "argumento_adicional",
+                "label": "Argumento Adicional",
+                "tipo": "textarea"
+              }
+            ]
+          }
+        ],
+        "prompt": "Crie uma petição inicial de ação revisional para {{autor}}, CPF {{cpf_autor}}, benefício {{numero_beneficio}}. Fundamentação principal: {{fundamento_revisao}}. Argumentos adicionais: se houver."
+      }
+    }
+  },
+  "consultivo": {
+    "aposentadorias": {
+      "Requerimento de Aposentadoria por Tempo de Contribuição": {
+        "permite_upload": false,
+        "campos": [
+          {
+            "nome": "requerente",
+            "label": "Nome do Requerente",
+            "tipo": "text"
+          },
+          {
+            "nome": "cpf_requerente",
+            "label": "CPF do Requerente",
+            "tipo": "text",
+            "validacao": {
+              "regex": "^\\d{11}$",
+              "mensagem_erro": "CPF inválido, deve conter 11 dígitos numéricos."
+            }
+          },
+          {
+            "nome": "numero_nis",
+            "label": "Número do NIS/PIS",
+            "tipo": "text"
+          },
+          {
+            "nome": "tempo_contribuicao",
+            "label": "Tempo de Contribuição",
+            "tipo": "text"
+          },
+          {
+            "nome": "periodos_especiais",
+            "label": "Períodos Especiais",
+            "tipo": "textarea"
+          },
+          {
+            "nome": "data_ultimo_vinculo",
+            "label": "Data do Último Vínculo",
+            "tipo": "text"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Redija um requerimento de aposentadoria por tempo de contribuição para {{requerente}}, CPF {{cpf_requerente}}, NIS/PIS {{numero_nis}}, tempo de contribuição {{tempo_contribuicao}}, períodos especiais: {{periodos_especiais}}, último vínculo: {{data_ultimo_vinculo}}."
+      }
+    },
+    "pensoes": {
+      "Requerimento de Pensão por Morte": {
+        "permite_upload": true,
+        "campos": [
+          {
+            "nome": "dependente",
+            "label": "Nome do Dependente",
+            "tipo": "text"
+          },
+          {
+            "nome": "cpf_dependente",
+            "label": "CPF do Dependente",
+            "tipo": "text",
+            "validacao": {
+              "regex": "^\\d{11}$",
+              "mensagem_erro": "CPF deve ter 11 números."
+            }
+          },
+          {
+            "nome": "falecido",
+            "label": "Nome do Falecido",
+            "tipo": "text"
+          },
+          {
+            "nome": "cpf_falecido",
+            "label": "CPF do Falecido",
+            "tipo": "text",
+            "validacao": {
+              "regex": "^\\d{11}$",
+              "mensagem_erro": "CPF deve ter 11 números."
+            }
+          },
+          {
+            "nome": "data_obito",
+            "label": "Data do Óbito",
+            "tipo": "text"
+          },
+          {
+            "nome": "vinculo_dependencia",
+            "label": "Vínculo de Dependência",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [
+          {
+            "nome_grupo": "dependentes_adicionais",
+            "label_grupo": "Dependentes Adicionais",
+            "campos": [
+              {
+                "nome": "nome_dependente_adicional",
+                "label": "Nome do Dependente Adicional",
+                "tipo": "text"
+              },
+              {
+                "nome": "cpf_dependente_adicional",
+                "label": "CPF do Dependente Adicional",
+                "tipo": "text",
+                "validacao": {
+                  "regex": "^\\d{11}$",
+                  "mensagem_erro": "CPF deve ter 11 números."
+                }
+              }
+            ]
+          }
+        ],
+        "prompt": "Crie um requerimento de pensão por morte para {{dependente}}, CPF {{cpf_dependente}}, em razão do falecimento de {{falecido}}, CPF {{cpf_falecido}}, ocorrido em {{data_obito}}. Vínculo de dependência: {{vinculo_dependencia}}. Dependentes adicionais: se houver."
+      }
+    }
+  }
+}

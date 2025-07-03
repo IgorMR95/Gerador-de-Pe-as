@@ -1,0 +1,361 @@
+{
+  "contencioso": {
+    "iniciais": {
+      "Ação de Divórcio Litigioso": {
+        "permite_upload": true,
+        "campos": [
+          {
+            "nome": "autor",
+            "label": "Nome do Autor",
+            "tipo": "text"
+          },
+          {
+            "nome": "cpf_autor",
+            "label": "CPF do Autor",
+            "tipo": "text"
+          },
+          {
+            "nome": "reu",
+            "label": "Nome do Réu",
+            "tipo": "text"
+          },
+          {
+            "nome": "fundamentos_divorcio",
+            "label": "Fundamentos do Divórcio",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Redija uma ação de divórcio litigioso para {{autor}}, CPF {{cpf_autor}}, contra {{reu}}. Fundamentação: {{fundamentos_divorcio}}. Considerar o documento anexo."
+      },
+      "Ação de Guarda e Regulamentação de Visitas": {
+        "permite_upload": true,
+        "campos": [
+          {
+            "nome": "requerente",
+            "label": "Nome do Requerente",
+            "tipo": "text"
+          },
+          {
+            "nome": "cpf_requerente",
+            "label": "CPF do Requerente",
+            "tipo": "text"
+          },
+          {
+            "nome": "menor",
+            "label": "Nome do Menor",
+            "tipo": "text"
+          },
+          {
+            "nome": "fundamentos_guarda",
+            "label": "Fundamentos para Guarda",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Elabore inicial de guarda e regulamentação de visitas para {{requerente}}, CPF {{cpf_requerente}}, referente a {{menor}}. Fundamentação: {{fundamentos_guarda}}. Considerar o documento anexo."
+      },
+      "Ação de Alimentos": {
+        "permite_upload": true,
+        "campos": [
+          {
+            "nome": "alimentante",
+            "label": "Nome do Alimentante",
+            "tipo": "text"
+          },
+          {
+            "nome": "cpf_alimentante",
+            "label": "CPF do Alimentante",
+            "tipo": "text"
+          },
+          {
+            "nome": "alimentado",
+            "label": "Nome do Alimentado",
+            "tipo": "text"
+          },
+          {
+            "nome": "fundamentos_alimentos",
+            "label": "Fundamentos para Alimentos",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Redija ação de alimentos movida por {{alimentado}} contra {{alimentante}}, CPF {{cpf_alimentante}}. Fundamentação: {{fundamentos_alimentos}}. Considerar o documento anexo."
+      }
+    },
+    "defesas": {
+      "Contestação em Ação de Divórcio": {
+        "permite_upload": true,
+        "campos": [
+          {
+            "nome": "reu",
+            "label": "Nome do Réu",
+            "tipo": "text"
+          },
+          {
+            "nome": "cpf_reu",
+            "label": "CPF do Réu",
+            "tipo": "text"
+          },
+          {
+            "nome": "autor",
+            "label": "Nome do Autor",
+            "tipo": "text"
+          },
+          {
+            "nome": "fundamentos_defesa_divorcio",
+            "label": "Fundamentos da Defesa",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Elabore contestação em ação de divórcio para {{reu}}, CPF {{cpf_reu}}, movida por {{autor}}. Fundamentação: {{fundamentos_defesa_divorcio}}. Considerar o documento anexo."
+      },
+      "Contestação em Ação de Guarda": {
+        "permite_upload": true,
+        "campos": [
+          {
+            "nome": "reu",
+            "label": "Nome do Réu",
+            "tipo": "text"
+          },
+          {
+            "nome": "cpf_reu",
+            "label": "CPF do Réu",
+            "tipo": "text"
+          },
+          {
+            "nome": "menor",
+            "label": "Nome do Menor",
+            "tipo": "text"
+          },
+          {
+            "nome": "fundamentos_defesa_guarda",
+            "label": "Fundamentos da Defesa",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Redija contestação em ação de guarda de {{menor}} para {{reu}}, CPF {{cpf_reu}}. Fundamentação: {{fundamentos_defesa_guarda}}. Considerar o documento anexo."
+      },
+      "Contestação em Ação de Alimentos": {
+        "permite_upload": true,
+        "campos": [
+          {
+            "nome": "reu",
+            "label": "Nome do Réu",
+            "tipo": "text"
+          },
+          {
+            "nome": "cpf_reu",
+            "label": "CPF do Réu",
+            "tipo": "text"
+          },
+          {
+            "nome": "autor",
+            "label": "Nome do Autor",
+            "tipo": "text"
+          },
+          {
+            "nome": "fundamentos_defesa_alimentos",
+            "label": "Fundamentos da Defesa",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Elabore contestação em ação de alimentos para {{reu}}, CPF {{cpf_reu}}, movida por {{autor}}. Fundamentação: {{fundamentos_defesa_alimentos}}. Considerar o documento anexo."
+      }
+    },
+    "pecas_simples": {
+      "Petição de Juntada de Documento": {
+        "permite_upload": true,
+        "campos": [
+          {
+            "nome": "parte",
+            "label": "Nome da Parte",
+            "tipo": "text"
+          },
+          {
+            "nome": "descricao_documento",
+            "label": "Descrição do Documento",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Elabore petição de juntada de documento para {{parte}}. Documento: {{descricao_documento}}. Considerar o documento anexo."
+      },
+      "Pedido de Expedição de Alvará Judicial": {
+        "permite_upload": true,
+        "campos": [
+          {
+            "nome": "parte",
+            "label": "Nome da Parte",
+            "tipo": "text"
+          },
+          {
+            "nome": "motivo_alvara",
+            "label": "Motivo do Alvará",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Redija pedido de expedição de alvará judicial para {{parte}}. Motivo: {{motivo_alvara}}. Considerar o documento anexo."
+      },
+      "Petição de Reconsideração": {
+        "permite_upload": true,
+        "campos": [
+          {
+            "nome": "parte",
+            "label": "Nome da Parte",
+            "tipo": "text"
+          },
+          {
+            "nome": "motivo_reconsideracao",
+            "label": "Motivo da Reconsideração",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Crie petição de reconsideração para {{parte}}. Motivo: {{motivo_reconsideracao}}. Considerar o documento anexo."
+      }
+    }
+  },
+  "consultivo": {
+    "contratos": {
+      "Contrato de União Estável": {
+        "permite_upload": true,
+        "campos": [
+          {
+            "nome": "companheiro1",
+            "label": "Nome do Companheiro 1",
+            "tipo": "text"
+          },
+          {
+            "nome": "companheiro2",
+            "label": "Nome do Companheiro 2",
+            "tipo": "text"
+          },
+          {
+            "nome": "detalhes_uniao",
+            "label": "Detalhes da União",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Redija contrato de união estável entre {{companheiro1}} e {{companheiro2}}. Detalhes: {{detalhes_uniao}}. Considerar o documento anexo."
+      },
+      "Pacto Antenupcial": {
+        "permite_upload": true,
+        "campos": [
+          {
+            "nome": "noivo",
+            "label": "Nome do Noivo",
+            "tipo": "text"
+          },
+          {
+            "nome": "noiva",
+            "label": "Nome da Noiva",
+            "tipo": "text"
+          },
+          {
+            "nome": "regime_bens",
+            "label": "Regime de Bens",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Crie pacto antenupcial entre {{noivo}} e {{noiva}}. Regime de bens: {{regime_bens}}. Considerar o documento anexo."
+      },
+      "Acordo de Guarda e Visitas": {
+        "permite_upload": true,
+        "campos": [
+          {
+            "nome": "genitor1",
+            "label": "Nome do Genitor 1",
+            "tipo": "text"
+          },
+          {
+            "nome": "genitor2",
+            "label": "Nome do Genitor 2",
+            "tipo": "text"
+          },
+          {
+            "nome": "detalhes_acordo",
+            "label": "Detalhes do Acordo",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Elabore acordo de guarda e visitas entre {{genitor1}} e {{genitor2}}. Detalhes: {{detalhes_acordo}}. Considerar o documento anexo."
+      }
+    },
+    "pecas_simples": {
+      "Declaração de Dependência Econômica": {
+        "permite_upload": true,
+        "campos": [
+          {
+            "nome": "declarante",
+            "label": "Nome do Declarante",
+            "tipo": "text"
+          },
+          {
+            "nome": "dependente",
+            "label": "Nome do Dependente",
+            "tipo": "text"
+          },
+          {
+            "nome": "fundamentos_dependencia",
+            "label": "Fundamentos da Dependência",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Redija declaração de dependência econômica de {{dependente}} por {{declarante}}. Fundamentação: {{fundamentos_dependencia}}. Considerar o documento anexo."
+      },
+      "Notificação Extrajudicial para Pagamento de Pensão": {
+        "permite_upload": true,
+        "campos": [
+          {
+            "nome": "notificante",
+            "label": "Nome do Notificante",
+            "tipo": "text"
+          },
+          {
+            "nome": "notificado",
+            "label": "Nome do Notificado",
+            "tipo": "text"
+          },
+          {
+            "nome": "motivo_notificacao",
+            "label": "Motivo da Notificação",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Crie notificação extrajudicial de pagamento de pensão de {{notificante}} para {{notificado}}. Motivo: {{motivo_notificacao}}. Considerar o documento anexo."
+      },
+      "Declaração de União Estável": {
+        "permite_upload": true,
+        "campos": [
+          {
+            "nome": "companheiro1",
+            "label": "Nome do Companheiro 1",
+            "tipo": "text"
+          },
+          {
+            "nome": "companheiro2",
+            "label": "Nome do Companheiro 2",
+            "tipo": "text"
+          },
+          {
+            "nome": "detalhes_uniao",
+            "label": "Detalhes da União",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Redija declaração de união estável entre {{companheiro1}} e {{companheiro2}}. Detalhes: {{detalhes_uniao}}. Considerar o documento anexo."
+      }
+    }
+  }
+}

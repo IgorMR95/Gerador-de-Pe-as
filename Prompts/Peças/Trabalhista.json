@@ -1,0 +1,376 @@
+{
+  "contencioso": {
+    "iniciais": {
+      "Reclamação Trabalhista por Verbas Rescisórias": {
+        "permite_upload": true,
+        "campos": [
+          {
+            "nome": "reclamante",
+            "label": "Nome do Reclamante",
+            "tipo": "text"
+          },
+          {
+            "nome": "cpf_reclamante",
+            "label": "CPF do Reclamante",
+            "tipo": "text"
+          },
+          {
+            "nome": "reclamada",
+            "label": "Nome da Reclamada",
+            "tipo": "text"
+          },
+          {
+            "nome": "fundamentos_inicial",
+            "label": "Fundamentos da Reclamação",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Redija uma Reclamação Trabalhista por verbas rescisórias para {{reclamante}}, CPF {{cpf_reclamante}}, contra {{reclamada}}. Fundamentação: {{fundamentos_inicial}}."
+      },
+      "Ação de Cobrança de Horas Extras": {
+        "permite_upload": true,
+        "campos": [
+          {
+            "nome": "autor",
+            "label": "Nome do Autor",
+            "tipo": "text"
+          },
+          {
+            "nome": "cpf_autor",
+            "label": "CPF do Autor",
+            "tipo": "text"
+          },
+          {
+            "nome": "empresa",
+            "label": "Nome da Empresa",
+            "tipo": "text"
+          },
+          {
+            "nome": "detalhes_horas",
+            "label": "Detalhes das Horas Extras",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Crie ação de cobrança de horas extras para {{autor}}, CPF {{cpf_autor}}, contra a empresa {{empresa}}. Detalhes: {{detalhes_horas}}."
+      },
+      "Ação de Reconhecimento de Vínculo Empregatício": {
+        "permite_upload": true,
+        "campos": [
+          {
+            "nome": "trabalhador",
+            "label": "Nome do Trabalhador",
+            "tipo": "text"
+          },
+          {
+            "nome": "cpf_trabalhador",
+            "label": "CPF do Trabalhador",
+            "tipo": "text"
+          },
+          {
+            "nome": "empresa",
+            "label": "Empresa Reclamada",
+            "tipo": "text"
+          },
+          {
+            "nome": "fundamentos_vinculo",
+            "label": "Fundamentos para o Vínculo",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Elabore inicial para reconhecimento de vínculo empregatício de {{trabalhador}}, CPF {{cpf_trabalhador}}, contra {{empresa}}. Fundamentação: {{fundamentos_vinculo}}."
+      }
+    },
+    "defesas": {
+      "Contestação de Reclamação Trabalhista": {
+        "permite_upload": true,
+        "campos": [
+          {
+            "nome": "reclamada",
+            "label": "Nome da Reclamada",
+            "tipo": "text"
+          },
+          {
+            "nome": "cnpj_reclamada",
+            "label": "CNPJ da Reclamada",
+            "tipo": "text"
+          },
+          {
+            "nome": "autor",
+            "label": "Nome do Reclamante",
+            "tipo": "text"
+          },
+          {
+            "nome": "fundamentos_contestacao",
+            "label": "Fundamentos da Contestação",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Redija contestação à reclamação trabalhista movida por {{autor}} contra {{reclamada}}, CNPJ {{cnpj_reclamada}}. Fundamentação: {{fundamentos_contestacao}}."
+      },
+      "Defesa em Ação de Horas Extras": {
+        "permite_upload": true,
+        "campos": [
+          {
+            "nome": "empresa",
+            "label": "Empresa Reclamada",
+            "tipo": "text"
+          },
+          {
+            "nome": "cnpj_empresa",
+            "label": "CNPJ da Empresa",
+            "tipo": "text"
+          },
+          {
+            "nome": "autor",
+            "label": "Nome do Autor",
+            "tipo": "text"
+          },
+          {
+            "nome": "argumentos_defesa",
+            "label": "Argumentos da Defesa",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Elabore defesa em ação de horas extras proposta por {{autor}} contra {{empresa}}, CNPJ {{cnpj_empresa}}. Argumentos: {{argumentos_defesa}}."
+      },
+      "Contestação de Ação de Indenização por Danos Morais": {
+        "permite_upload": true,
+        "campos": [
+          {
+            "nome": "empresa",
+            "label": "Nome da Empresa",
+            "tipo": "text"
+          },
+          {
+            "nome": "cnpj_empresa",
+            "label": "CNPJ da Empresa",
+            "tipo": "text"
+          },
+          {
+            "nome": "autor",
+            "label": "Nome do Reclamante",
+            "tipo": "text"
+          },
+          {
+            "nome": "argumentos_morais",
+            "label": "Argumentos para Contestação",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Redija contestação de ação de indenização por danos morais movida por {{autor}} contra {{empresa}}, CNPJ {{cnpj_empresa}}. Argumentos: {{argumentos_morais}}."
+      }
+    },
+    "pecas_simples": {
+      "Petição de Juntada de Documentos": {
+        "permite_upload": true,
+        "campos": [
+          {
+            "nome": "parte",
+            "label": "Nome da Parte",
+            "tipo": "text"
+          },
+          {
+            "nome": "documento_descricao",
+            "label": "Descrição do Documento",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Elabore petição de juntada de documentos para {{parte}}. Documento: {{documento_descricao}}."
+      },
+      "Pedido de Expedição de Alvará": {
+        "permite_upload": false,
+        "campos": [
+          {
+            "nome": "parte",
+            "label": "Nome da Parte",
+            "tipo": "text"
+          },
+          {
+            "nome": "motivo_alvara",
+            "label": "Motivo do Alvará",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Redija pedido de expedição de alvará para {{parte}}. Motivo: {{motivo_alvara}}."
+      },
+      "Petição de Solicitação de Audiência": {
+        "permite_upload": false,
+        "campos": [
+          {
+            "nome": "parte",
+            "label": "Nome da Parte",
+            "tipo": "text"
+          },
+          {
+            "nome": "justificativa_audiencia",
+            "label": "Justificativa para Audiência",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Crie petição de solicitação de audiência para {{parte}}. Justificativa: {{justificativa_audiencia}}."
+      }
+    }
+  },
+  "consultivo": {
+    "contratos": {
+      "Contrato de Trabalho por Prazo Determinado": {
+        "permite_upload": false,
+        "campos": [
+          {
+            "nome": "empregador",
+            "label": "Nome do Empregador",
+            "tipo": "text"
+          },
+          {
+            "nome": "cpf_cnpj_empregador",
+            "label": "CPF ou CNPJ do Empregador",
+            "tipo": "text"
+          },
+          {
+            "nome": "empregado",
+            "label": "Nome do Empregado",
+            "tipo": "text"
+          },
+          {
+            "nome": "duracao_contrato",
+            "label": "Duração do Contrato",
+            "tipo": "text"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Elabore contrato de trabalho por prazo determinado entre {{empregador}}, CPF/CNPJ {{cpf_cnpj_empregador}}, e {{empregado}}. Duração: {{duracao_contrato}}."
+      },
+      "Contrato de Experiência": {
+        "permite_upload": false,
+        "campos": [
+          {
+            "nome": "empresa",
+            "label": "Nome da Empresa",
+            "tipo": "text"
+          },
+          {
+            "nome": "cnpj_empresa",
+            "label": "CNPJ da Empresa",
+            "tipo": "text"
+          },
+          {
+            "nome": "funcionario",
+            "label": "Nome do Funcionário",
+            "tipo": "text"
+          },
+          {
+            "nome": "periodo_experiencia",
+            "label": "Período de Experiência",
+            "tipo": "text"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Crie contrato de experiência entre {{empresa}}, CNPJ {{cnpj_empresa}}, e {{funcionario}}. Período: {{periodo_experiencia}}."
+      },
+      "Contrato de Prestação de Serviços": {
+        "permite_upload": false,
+        "campos": [
+          {
+            "nome": "contratante",
+            "label": "Nome do Contratante",
+            "tipo": "text"
+          },
+          {
+            "nome": "cnpj_contratante",
+            "label": "CNPJ do Contratante",
+            "tipo": "text"
+          },
+          {
+            "nome": "prestador",
+            "label": "Nome do Prestador de Serviços",
+            "tipo": "text"
+          },
+          {
+            "nome": "descricao_servico",
+            "label": "Descrição do Serviço",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Elabore contrato de prestação de serviços entre {{contratante}}, CNPJ {{cnpj_contratante}}, e {{prestador}}. Serviço: {{descricao_servico}}."
+      }
+    },
+    "pecas_simples": {
+      "Declaração de Vínculo Empregatício": {
+        "permite_upload": false,
+        "campos": [
+          {
+            "nome": "empresa",
+            "label": "Nome da Empresa",
+            "tipo": "text"
+          },
+          {
+            "nome": "empregado",
+            "label": "Nome do Empregado",
+            "tipo": "text"
+          },
+          {
+            "nome": "periodo",
+            "label": "Período do Vínculo",
+            "tipo": "text"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Crie declaração de vínculo empregatício entre {{empresa}} e {{empregado}} para o período {{periodo}}."
+      },
+      "Notificação Extrajudicial de Advertência": {
+        "permite_upload": false,
+        "campos": [
+          {
+            "nome": "empregador",
+            "label": "Nome do Empregador",
+            "tipo": "text"
+          },
+          {
+            "nome": "empregado",
+            "label": "Nome do Empregado",
+            "tipo": "text"
+          },
+          {
+            "nome": "motivo",
+            "label": "Motivo da Advertência",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Redija notificação extrajudicial de advertência de {{empregador}} para {{empregado}}. Motivo: {{motivo}}."
+      },
+      "Pedido de Esclarecimentos de Jornada de Trabalho": {
+        "permite_upload": false,
+        "campos": [
+          {
+            "nome": "empresa",
+            "label": "Nome da Empresa",
+            "tipo": "text"
+          },
+          {
+            "nome": "empregado",
+            "label": "Nome do Empregado",
+            "tipo": "text"
+          },
+          {
+            "nome": "questao_jornada",
+            "label": "Questão sobre a Jornada",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Crie pedido de esclarecimentos sobre jornada de trabalho de {{empregado}} na empresa {{empresa}}. Questão: {{questao_jornada}}."
+      }
+    }
+  }
+}

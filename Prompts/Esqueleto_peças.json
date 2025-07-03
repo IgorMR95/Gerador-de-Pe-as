@@ -1,0 +1,59 @@
+{
+  "contencioso": {
+    "categoria_exemplo": {
+      "Nome da Peça Exemplo": {
+        "permite_upload": true,
+        "campos": [
+          {
+            "nome": "nome_campo",
+            "label": "Label do Campo",
+            "tipo": "text",
+            "validacao": {
+              "regex": "regex_opcional",
+              "mensagem_erro": "Mensagem de erro se regex falhar"
+            }
+          },
+          {
+            "nome": "outro_campo",
+            "label": "Outro Campo",
+            "tipo": "textarea"
+          }
+        ],
+        "grupos_extras": [
+          {
+            "nome_grupo": "nome_grupo_exemplo",
+            "label_grupo": "Label do Grupo Exemplo",
+            "campos": [
+              {
+                "nome": "campo_extra",
+                "label": "Campo Extra",
+                "tipo": "text",
+                "validacao": {
+                  "regex": "regex_opcional",
+                  "mensagem_erro": "Mensagem de erro para o campo extra"
+                }
+              }
+            ]
+          }
+        ],
+        "prompt": "Prompt base usando {{nome_campo}}, {{outro_campo}}, e os campos extras se houver."
+      }
+    }
+  },
+  "consultivo": {
+    "categoria_exemplo": {
+      "Nome da Peça Consultiva": {
+        "permite_upload": false,
+        "campos": [
+          {
+            "nome": "campo_consultivo",
+            "label": "Campo Consultivo",
+            "tipo": "text"
+          }
+        ],
+        "grupos_extras": [],
+        "prompt": "Prompt base consultivo usando {{campo_consultivo}}."
+      }
+    }
+  }
+}
